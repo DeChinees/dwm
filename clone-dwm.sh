@@ -7,6 +7,8 @@ git clone https://git.suckless.org/slock
 
 
 Source: https://lecorbeausvault.wordpress.com/2020/04/08/install-guide-suckless-dwm-with-st-and-dmenu/
+        https://faun.pub/the-easiest-way-to-install-dwm-43bbf668ea83
+        
 cd dwm-*.*
 make
 sudo make clean install
