@@ -9,7 +9,7 @@ sudo xbps-install -Suy intel-ucode
 
 # Add some utils
 sudo xbps-install -Suy tlp powertop socklog-void git seatd
-sudo xbps-install -Suy wayland wlroots sway waybar
+sudo xbps-install -Suy wayland wlroots sway swayidle swayimg swaylock bemenu foot qutebrowser
 sudo xbps-install -Suy xdg-user-dirs xdg-utils xdg-desktop-portal-wlr
 sudo xbps-install -Suy alsa-utils pipewire alsa-pipewire
 
@@ -25,8 +25,9 @@ sudo ln -s /etc/sv/seatd /var/service
 sudo ln -s /usr/share/fontconfig/conf.avail/10-hinting-slight.conf /etc/fonts/conf.d/
 sduo ln -s /usr/share/fontconfig/conf.avail/50-user.conf /etc/fonts/conf.d/
 
-mkdir -p /home/${USER}/.dwl
-echo "export XDG_RUNTIME_DIR=/home/${USER}/.dwl" >> /home/${USER}/.bashrc
+mkdir -p /tmp/${USER}-runtime-dir
+chmod 0700 /tmp/${USER}-runtime-dir
+echo "export XDG_RUNTIME_DIR=/tmp/${USER}-runtime-dir" >> /home/${USER}/.bashrc
 
 echo "modprobe -r usbmouse" | sudo tee -a /etc/rc.local > /dev/null 
 echo "modprobe -r bcm5974" | sudo tee -a /etc/rc.local > /dev/null
