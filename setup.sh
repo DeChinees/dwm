@@ -9,7 +9,7 @@ sudo xbps-install -Suy intel-ucode
 
 # Add some utils
 sudo xbps-install -Suy tlp powertop socklog-void git seatd xorg-fonts
-sudo xbps-install -Suy wayland wlroots sway swayidle swayimg swaylock bemenu foot qutebrowser
+sudo xbps-install -Suy wayland wlroots sway swayidle swayimg swaylock dmenu foot qutebrowser
 sudo xbps-install -Suy xdg-user-dirs xdg-utils xdg-desktop-portal-wlr
 sudo xbps-install -Suy alsa-utils pipewire alsa-pipewire
 
