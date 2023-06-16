@@ -8,7 +8,7 @@ sudo xbps-install -Suy void-repo-nonfree void-repo-multilib void-repo-multilib-n
 sudo xbps-install -Suy intel-ucode
 
 # Add some utils
-sudo xbps-install -Suyx tlp tlp-rdw powertop socklog-void git xorg-fonts networkmanager
+sudo xbps-install -Suy tlp tlp-rdw powertop socklog-void git xorg-fonts NetworkManager
 sudo xbps-install -Suy dbus elogind xorg budgie-desktop gdm gnome-control-center  
 sudo xbps-install -Suy xdg-user-dirs-gtk xdg-utils xdg-desktop-portal-wlr
 sudo xbps-install -Suy alsa-utils pipewire alsa-pipewire
@@ -27,7 +27,7 @@ sudo ln -s /etc/sv/elogind /var/service
 sudo ln -s /etc/sv/gdm /var/service
 sudo ln -s /usr/share/fontconfig/conf.avail/10-hinting-slight.conf /etc/fonts/conf.d/
 sudo ln -s /usr/share/fontconfig/conf.avail/50-user.conf /etc/fonts/conf.d/
-sudo ln -s /usr/sv/networkmanager /var/service
+sudo ln -s /usr/sv/NetworkManager /var/service
 
 # Disable services
 sudo rm /var/service/dhcpcd
