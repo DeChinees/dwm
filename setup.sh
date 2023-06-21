@@ -10,7 +10,7 @@ sudo xbps-install -Suy intel-ucode
 
 # Add some utils
 sudo xbps-install -Suy tlp tlp-rdw powertop socklog-void dbus elogind brightnessctl NetworkManager
-sudo xbps-install -Suy xorg xorg-fonts gdm gnome gnome-apps gnome-control-center gnome-shell-extensions
+sudo xbps-install -Suy xorg xorg-fonts gdm gnome gnome-apps gnome-control-center gnome-shell-extensions gnome-tweak-tool gnome-keyring
 sudo xbps-install -Suy xdg-user-dirs-gtk xdg-utils xdg-desktop-portal-wlr
 sudo xbps-install -Suy alsa-utils pipewire alsa-pipewire
 
