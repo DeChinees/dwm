@@ -10,7 +10,8 @@ sudo xbps-install -Suy intel-ucode
 
 # Add some utils
 sudo xbps-install -Suy tlp tlp-rdw powertop socklog-void dbus elogind brightnessctl NetworkManager
-sudo xbps-install -Suy xorg xorg-fonts gdm gnome gnome-apps gnome-control-center gnome-shell-extensions gnome-tweak-tool gnome-keyring
+#GNOME sudo xbps-install -Suy xorg xorg-fonts gdm gnome gnome-apps gnome-control-center gnome-shell-extensions gnome-tweak-tool gnome-keyring
+sudo xbps-install -Suy xorg xorg-fonts lxdm lxqt
 sudo xbps-install -Suy xdg-user-dirs-gtk xdg-utils xdg-desktop-portal-wlr
 sudo xbps-install -Suy alsa-utils pipewire alsa-pipewire
 
@@ -31,7 +32,7 @@ sudo ln -s /etc/sv/dbus /var/service
 sudo ln -s /etc/sv/elogind /var/service
 sudo ln -s /usr/share/fontconfig/conf.avail/10-hinting-slight.conf /etc/fonts/conf.d/
 sudo ln -s /usr/share/fontconfig/conf.avail/50-user.conf /etc/fonts/conf.d/
-sudo ln -s /etc/sv/gdm /var/service
+sudo ln -s /etc/sv/lxdm /var/service
 
 # Disable services
 sudo rm /var/service/wpa_supplicant
