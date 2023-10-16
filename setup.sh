@@ -11,7 +11,7 @@ sudo xbps-install -Suy intel-ucode
 # Add some utils
 sudo xbps-install -Suy tlp tlp-rdw powertop socklog-void dbus elogind brightnessctl NetworkManager
 sudo xbps-install -Suy xorg-minimal xorg-input-drivers xorg-video-drivers xorg-fonts setxkbmap xauth font-misc-misc terminus-font dejavu-fonts-ttf alsa-utils pipewire alsa-pipewire
-sudo xbps-install -Suy lxdm enlightenment terminology econnman udisks2 firefox-esr
+sudo xbps-install -Suy lxdm xfce4 gnome-themes-standard gnome-keyring network-manager-applet gvfs-afc gvfs-mtp gvfs-smb udisks2 firefox-esr
 sudo xbps-install -Suy xdg-user-dirs-gtk xdg-utils xdg-desktop-portal-wlr
 
 # Add some fonts
