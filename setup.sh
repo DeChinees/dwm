@@ -9,10 +9,10 @@ sudo xbps-install -Suy void-repo-nonfree void-repo-multilib void-repo-multilib-n
 sudo xbps-install -Suy intel-ucode
 
 # Add some utils
-sudo xbps-install -Suy tlp tlp-rdw powertop socklog-void dbus elogind brightnessctl NetworkManager
+sudo xbps-install -Suy tlp tlp-rdw powertop socklog-void dbus elogind brightnessctl NetworkManager bluez preload rsync kate git
 sudo xbps-install -Suy xorg-minimal xorg-input-drivers xorg-video-drivers xorg-fonts setxkbmap xauth font-misc-misc terminus-font dejavu-fonts-ttf alsa-utils pipewire alsa-pipewire
-sudo xbps-install -Suy lxdm xfce4 gnome-themes-standard gnome-keyring network-manager-applet gvfs-afc gvfs-mtp gvfs-smb udisks2 firefox-esr
-sudo xbps-install -Suy xdg-user-dirs-gtk xdg-utils xdg-desktop-portal-wlr
+sudo xbps-install -Suy kde5 kde5-baseapps firefox-esr
+sudo xbps-install -Suy xdg-user-dirs xdg-utils xdg-desktop-portal-wlr xtools micro
 
 # Add some fonts
 sudo xbps-install -Suy noto-fonts-tff noto-fonts-tff-extra noto-fonts-emoji otf-font-awesome nerd-fonts-otf
@@ -21,6 +21,7 @@ sudo xbps-install -Suy noto-fonts-tff noto-fonts-tff-extra noto-fonts-emoji otf-
 sudo usermod -aG socklog ${USER}
 
 # Enable services
+sudo ln -s /etc/sv/networkmanager /var/service
 sudo ln -s /etc/sv/tlp /var/service
 sudo ln -s /etc/sv/socklog-unix /var/service
 sudo ln -s /etc/sv/dbus /var/service
